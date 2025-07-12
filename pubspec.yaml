@@ -23,4 +23,3 @@ flutter:
         package: com.sstonn.flutter_wear_os_connectivity
         pluginClass: FlutterWearOsConnectivityPlugin
         dartPluginClass: FlutterWearOsConnectivity
-

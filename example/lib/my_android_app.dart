@@ -121,7 +121,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(info.name,
-                    style: theme.textTheme.headline6
+                    style: theme.textTheme.titleLarge
                         ?.copyWith(color: theme.primaryColor)),
                 Text("Device ID: ${info.id}"),
                 Text("Is nearby: ${info.isNearby}")
@@ -135,7 +135,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
                       color: mainColor,
                       borderRadius: BorderRadius.circular(10)),
                   child: Text(isSelected ? "Selected" : "Select",
-                      style: theme.textTheme.subtitle1
+                      style: theme.textTheme.bodyLarge
                           ?.copyWith(color: secondaryColor)),
                 ),
                 onPressed: () {
@@ -193,7 +193,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
         spacing: 5,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text("Received message: ", style: theme.textTheme.headline6),
+          Text("Received message: ", style: theme.textTheme.titleLarge),
           ..._currentMessage != null
               ? [
                   Text("Raw Data: ${_currentMessage?.data.toString()}"),
@@ -214,7 +214,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
                 child: Text(
                   "Send example message",
                   style:
-                      theme.textTheme.subtitle1?.copyWith(color: Colors.white),
+                      theme.textTheme.bodyLarge?.copyWith(color: Colors.white),
                 ),
               ),
               onPressed: () {
@@ -227,7 +227,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
                         deviceId: _selectedDevice!.id, path: "/sample-message")
                     .then(print);
               }),
-          Text("Latest sync data: ", style: theme.textTheme.headline6),
+          Text("Latest sync data: ", style: theme.textTheme.titleLarge),
           ..._dataItem != null
               ? [
                   Text("Raw Data: ${_dataItem!.data.toString()}"),
@@ -245,7 +245,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
                 child: Text(
                   "Sync current data",
                   style:
-                      theme.textTheme.subtitle1?.copyWith(color: Colors.white),
+                      theme.textTheme.bodyLarge?.copyWith(color: Colors.white),
                 ),
               ),
               onPressed: () {
@@ -270,7 +270,7 @@ class _MyAndroidAppState extends State<MyAndroidApp> {
                 child: Text(
                   "Pick image and sync image data",
                   style:
-                      theme.textTheme.subtitle1?.copyWith(color: Colors.white),
+                      theme.textTheme.bodyLarge?.copyWith(color: Colors.white),
                 ),
               ),
               onPressed: () async {

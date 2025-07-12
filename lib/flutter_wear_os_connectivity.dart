@@ -2,7 +2,7 @@ library flutter_wear_os_connectivity;
 
 import 'dart:async';
 import 'dart:io';
-import 'dart:typed_data' show Uint8List;
+// import 'dart:typed_data' show Uint8List;
 
 import 'package:flutter/services.dart';
 import 'package:flutter_smart_watch_platform_interface/flutter_smart_watch_platform_interface.dart';

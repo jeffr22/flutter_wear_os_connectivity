@@ -1,6 +1,6 @@
-# flutter_wear_os_connectivity_example
+# example
 
-Demonstrates how to use the flutter_wear_os_connectivity plugin.
+A new Flutter project.
 
 ## Getting Started
 
